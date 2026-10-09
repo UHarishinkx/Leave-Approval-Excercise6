@@ -13,7 +13,7 @@ A small Leave Request process in Camunda 8. An employee's request enters the pro
 
 **1. Modeled the process.** In Camunda Modeler I drew a Start Event, a User Task named "Approve Leave", and an End Event, and set the Process ID to `leave-request`.
 
-![BPMN diagram](bpmn-diagram.png)
+![BPMN diagram](01-bpmn-diagram.png)
 
 **2. Deployed it.** I deployed the diagram from the Modeler to my local cluster.
 
@@ -31,11 +31,11 @@ A small Leave Request process in Camunda 8. An employee's request enters the pro
 
 The response was `200 OK`, and the `processInstanceKey` was: **`<paste your key here>`**
 
-![Postman request and response](postman.png)
+![Postman request and response](02-postman-request-response.png)
 
 **4. Verified in Operate.** The instance is active and waiting at "Approve Leave", and both variables (`employeeName`, `days`) are visible.
 
-![Operate running instance](operate.png)
+![Operate running instance](03-operate-running-instance.png)
 
 ## Viva answers
 
